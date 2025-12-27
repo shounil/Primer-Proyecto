@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/! PROYECTO PATROCLO/01 index/casco espartano.png">
+</head>
+<body>
+    
+    <form action="#" class="login-form">
+        <h1 class="login-title">Patrogleo</h1>
+
+        <div class="input-box">
+            <i class='bx bxs-user'></i>
+            <input type="text" placeholder="Patrosuario">
+        </div>
+        <div class="input-box">
+            <i class='bx bxs-lock-alt'></i>
+            <input type="password" placeholder="Patroseña">
+        </div>
+
+        <div class="remember-forgot-box">
+            <label for="remember">
+                <input type="checkbox" id="remember">
+                Patrocuerdame
+            </label>
+            <a href="#" id="forgot-password">Patroseña olvidada?</a>
+        </div>
+
+        <button class="login-btn" id="login">Patringresar</button>
+
+        <p class="register">
+            no sos un patroclo?
+            <a href="#" id="patroclearse">Patroclearse</a>
+        </p>
+    </form>
+<script>
+        document.getElementById('forgot-password').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("Jaja que queres q haga amigo, cagate");
+        });
+        document.getElementById('patroclearse').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("No cualquiera puede ser un patroclo, chau");
+        });
+        document.getElementById('login').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("Ahre que ni base de datos tengo KJASDKJLASDJKLA");
+        });
+</script>
+</body>
+</html>

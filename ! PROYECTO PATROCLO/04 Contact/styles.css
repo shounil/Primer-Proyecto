@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    background:url('bc.png') top / cover fixed #000;
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+    /* overflow: hidden; */
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+input,textarea,select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px #0001;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #eee;
+}
+textarea{
+    font-family: 'Poppins', sans-serif;
+    min-width: 100%;
+    resize: none; /*puede ser vertical, para que solo sea de arriba a abajo*/
+    min-height: 100px;
+    max-height: 200px;
+}
+.form_input{
+    padding: 6px 20px;
+}
+form{
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px 0;
+    max-width: 500px;
+    box-shadow: 0px 0px 20px #000;
+    margin-top: 50px;
+    font-size: 16px;
+    align-items: center;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    /* font-weight: 100; */
+    letter-spacing: 2px;
+    font-size: 2em;
+    padding: 0 80px;
+    font-family: 'Poppins', sans-serif;
+}
+.sumbit{
+    color: #222;
+    background-color: #eee;
+    box-shadow: 0px 0px 10px #eee;
+    border: 2px solid #eee;
+    transition: background-color 0.3s;
+}
+.sumbit:hover{
+    border: 2px solid #eee;
+    box-shadow: 0px 0px 10px #eee;
+    background-color: transparent;
+    color: #eee;
+}
+
+label{
+    font-size: 0.88em;
+    line-height: 2;
+}
+.checkbox{
+    width: auto;
+}
+option{
+    margin: 0;
+    background-color: #222;
+    font-family: 'Poppins', sans-serif;
+}
+fieldset{
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 8 6px 20px 6px;
+    margin: 20px;
+
+}
+legend{
+    padding: 0 6px;
+    color: #777;
+}
+a{
+    color: #69f;
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline;
+}
+
+input[type='email']:valid{
+    color: #0c0;
+}
+input[type='email']:invalid{
+    color: #c00;
+}
+.container-footer{
+    /* border: 2px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0; */
+}
+.volver{
+    color:#69f;
+    margin: 0;
+    padding-right: 0px;
+    text-decoration: none;
+    font-weight: 800;
+}
+.volver:hover{
+    text-shadow: 0px 0 30px #fff;
+    text-decoration: underline;
+}

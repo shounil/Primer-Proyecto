@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="/! PROYECTO PATROCLO/01 index/casco espartano.png">
+    </head>
+    <body>
+        <form>
+            <h1>- Patroclontacto - </h1>
+            <!-- <fieldset> -->
+            <!--SIMPLE INPUTS-->
+            <!-- <legend>Info. Basica</legend> -->
+                <div class="form_input">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="Nombre completo" placeholder="Thiago Sosa" id="nombre" required>
+                </div>
+            <!-- </fieldset> -->
+            
+            <!--SELECT & OPTION-->
+            <div class="form_input">
+                <label>Cuadro de futbol (5 grandes)
+                    <select name="cuadro-du-futebola">
+                        <option value="boca">boca</option>
+                        <option value="river">riber</option>
+                        <option value="independiente">independiente</option>
+                        <option value="san lorenzo">san silencio</option>
+                        <option value="racing">rasin</option>
+                    </select>
+                </label>
+            </div>
+            <!--DATALIST Y OPTION-->
+            <div class="form_input">
+                
+                <label> Donde nos conociste
+                    <input list="referente" name="referente">
+                    <datalist id="referente" name="referente">
+                        <option value="YouTube">red social de videos</option>
+                        <option value="Instagram">red social multimedia</option>
+                        <option value="twitter">donde hinchan los uebos</option>
+                        <option value="Snapchat">virgofotos de virgogente</option>
+                        <option value="WhatsApp">casi nadie lo considera red social</option>
+                        <option value="Discord">whatsapp para virgos</option>
+                        <option value="Githhub">no es una red social pero ok</option>
+                        <option value="Tinder">Jaja por donde lo conocia</option>
+                    </datalist>
+                </label>
+            </div>
+            <!--TEXT AREA-->
+            <div class="form_input">
+                <label class="c-email">Email de contacto
+                    <input type="email" placeholder="ejemplo@email.com" required>
+                </label>
+            </div>
+            <div class="form_input">
+                <label for="mensaje">Deja tu mensaje</label>
+                <textarea placeholder="Hola mi mensaje es..." id="mensaje" required></textarea>
+                <!--valores booleanos de text area:
+                - read only: solo para leer, no para modificar, pero si lo seleccionamos se hace el focus. cuando enviamos el formulario, este campo se envia
+                - disabled: no se envia el dato, y no se puede enfocar.
+                - maxlength="140" el maximo es de 140 caracteres
+                - rows='2' en vez de poner minheigth, es la cantidad de renglones antes de activar el scroll -->
+            </div>
+            <div class="form_input">
+                <div class="container-footer">
+                    <label> Acepto los <a href="terminos_y_condiciones.html" target="_blank" >terminos y condiciones</a>
+                        <input type="checkbox" class="checkbox" required>
+                    </label>
+                    <a href="/! PROYECTO PATROCLO/01 index/index.html" class="volver">← volver</a>
+                </div>
+            </div>
+            <div class="form_input">
+                <input type="submit" placeholder="enviar datos" class="sumbit">
+            </div>
+        </form>
+    </body>
+</html>
